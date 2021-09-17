@@ -25,4 +25,12 @@ public class UserDAO {
         if(id < 0 || id >= users.size()) throw new IndexOutOfBoundsException();
         return users.get(id);
     }
+
+    public static void saveUser(User user){
+        users.add(user);
+    }
+
+    public static void printRegistration(User user){
+        System.out.println("user #" + user.getId() + " " + user.getName() + " has been registered");
+    }
 }
