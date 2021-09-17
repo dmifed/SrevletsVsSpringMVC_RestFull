@@ -1,5 +1,8 @@
 package com.example.demo.httpServlet.userDAO;
 
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,6 +23,7 @@ public class UserDAO {
     public static List<User> getUsers() {
         return users;
     }
+
 
     public static User getUser(int id){
         if(id < 0 || id >= users.size()) throw new IndexOutOfBoundsException();

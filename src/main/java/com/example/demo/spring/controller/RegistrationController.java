@@ -21,6 +21,5 @@ public class RegistrationController {
         UserDAO.printRegistration(user);
         model.addAttribute("user", user);
         return "registration-success";
-
     }
 }
