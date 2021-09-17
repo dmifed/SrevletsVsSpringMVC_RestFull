@@ -9,7 +9,7 @@ import java.io.IOException;
 public class MyServletV1 extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         if(req.getRequestURI().equals("/")){
             resp.setContentType("text/html");
             resp.getWriter().print(
