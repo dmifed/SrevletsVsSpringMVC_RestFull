@@ -54,4 +54,12 @@ public class User {
                 "  \"name\":" + name + ",\n" +
                 "}";
     }
+
+    @Override
+    public String toString() {
+        if(age !=0 ){
+            return "#" + id + " " + " " + name;
+        }
+        return "#" + id + " " + " " + name + ", " + age;
+    }
 }
