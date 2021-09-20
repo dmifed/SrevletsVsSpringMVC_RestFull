@@ -11,13 +11,11 @@ public class User {
     private int id;
     private String name;
     private int age;
-    private List<Transaction> transactions;
 
     public User(String name, int age) {
         this.id = ++ids;
         this.name = name;
         this.age = age;
-        this.transactions = new ArrayList<>();
     }
 
     public User(String name) {
@@ -43,14 +41,6 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public void addTransaction(Transaction transaction){
-        transactions.add(transaction);
-    }
-
-    public List<Transaction> getTransactions() {
-        return transactions;
     }
 
     public String toJSON() {
